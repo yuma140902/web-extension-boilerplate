@@ -15,7 +15,7 @@ This boilerplate provides a skeleton to start developing cross-browser web exten
 [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/davidnguyen179/web-extension-boilerplate/pulls)
 ![ci/cd](https://github.com/davidnguyen179/web-extension-boilerplate/workflows/ci/cd/badge.svg)
 
-## Development
+## Development Build
 
 ```bash
 npm i
@@ -24,41 +24,41 @@ npm i
 **Chrome**
 
 ```bash
-npm run app:chrome-dev
+npm run build:chrome
 ```
 
 **Edge**
 
 ```bash
-npm run app:edge-dev
+npm run build:edge
 ```
 
 **Firefox**
 
 ```bash
-npm run app:firefox-dev
+npm run build:firefox
 ```
 
-## Production
+## Production Build
 
 ```bash
 npm i
 ```
 
 ```bash
-npm run app:chrome
+npm run build:chrome-prod
 ```
 
 **Edge**
 
 ```bash
-npm run app:edge
+npm run build:edge-prod
 ```
 
 **Firefox**
 
 ```bash
-npm run app:firefox
+npm run build:firefox-prod
 ```
 
 ## Load package to browsers
@@ -85,11 +85,9 @@ Check here for more detail: [https://developer.chrome.com/extensions/getstarted]
 
 **Firefox**
 
-1. Go to the browser's URL address bar
-2. Enter `about:debugging#/runtime/this-firefox`
-3. Click **Load Temporary Add-on...**
-4. Browse to your `manifest.json` & click **Open**
-5. Done!
+```bash
+npm start
+```
 
 Check here for more details: [https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/)
 
